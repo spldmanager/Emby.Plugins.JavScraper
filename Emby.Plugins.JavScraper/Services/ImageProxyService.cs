@@ -80,7 +80,7 @@ namespace Emby.Plugins.JavScraper.Services
             //  /emby/Plugins/JavScraper/Image?url=&type=xx
             if (url.IndexOf("Plugins/JavScraper/Image", StringComparison.OrdinalIgnoreCase) >= 0) //本地的链接
             {
-                var uri = new Uri(url);
+                var uri = new Uri("http://192.168.10.108:8099"+url);
                 var q = HttpUtility.ParseQueryString(uri.Query);
                 var url2 = q["url"];
                 if (url2.IsWebUrl())
