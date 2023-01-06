@@ -10,6 +10,9 @@ Emby/Jellyfin 的一个日本电影刮削器插件，可以从某些网站抓取
 # 目录
 - [主要原理](#主要原理)
 - [支持的采集来源](#支持的采集来源)
+- [如何编译](#如何编译)
+  * [下载安装dotnet](#下载安装dotnet)
+  * [运行编译命令](#运行编译命令)
 - [如何使用](#如何使用)
   * [部署修改版 jsproxy](#部署修改版-jsproxy)
   * [插件安装](#插件安装)
@@ -44,6 +47,14 @@ Emby/Jellyfin 的一个日本电影刮削器插件，可以从某些网站抓取
 - [AVSOX](https://avsox.host/)
 - [Jav123](https://www.jav321.com/)
 - [R18](https://www.r18.com/)
+
+# 如何编译
+## 下载安装dotnet
+从https://dotnet.microsoft.com/zh-cn/ 下载.net sdk，我本机下载的是5.0.402版本，然后进行安装
+## 运行编译命令
+进入到Emby.Plugins.JavScraper-master\Emby.Plugins.JavScraper目录下，启动cmd
+运行dotnet publish --configuration Release，文件会生成于Emby.Plugins.JavScraper-master\Emby.Plugins.JavScraper\bin\Release目录下
+
 
 # 如何使用
 
